@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificar Hash SHA-256</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web para probar tu hash generado SHA-256.">
+    <meta name="keywords" content="SHA-256 online, probar hash sha-256, SHA-256 en línea, sha-256 probar, probar hashes sha-256, probar hashes sha-256 online">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2586/2586106.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificación de Contraseña</h1>
+        <label for="stored-hash-input">Hash almacenado:</label>
+        <input type="text" id="stored-hash-input" placeholder="Hash almacenado aquí...">
+        <p></p>
+        <label for="salt-input">Introduce el salt (opcional):</label>
+        <input type="text" id="salt-input" placeholder="Salt aquí...">
+        <br>
+        <input type="checkbox" id="disable-salt">
+        <label for="disable-salt">Deshabilitar salt</label>
+        <p></p>
+        <label for="password-input">Introduce la contraseña:</label>
+        <input type="password" id="password-input" placeholder="Contraseña aquí...">
+        <p></p>
+        <button onclick="verifyPassword()">Verificar</button>
+        
+        <div id="output"></div>
+        <p></p>
+        <p>También puedes generar tu propio hash SHA-256 <a href="https://generador-sha256.vercel.app">aquí</a>.</p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
